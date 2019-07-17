@@ -1,5 +1,5 @@
-// console.log("Wake Up!")
-// alert("Hello!!")
+console.log("Wake Up!")
+alert("Hello!!")
 window.addEventListener('load', ()=> {
   let long;
   let lat;
