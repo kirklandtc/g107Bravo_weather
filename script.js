@@ -29,6 +29,7 @@ window.addEventListener('load', ()=> {
 
          const { temperature, summary } = data.currently;
 //Set DOM elements from the api
+
          temperatureDegree.textContent = temperature;
          temperatureDescription.textContent = summary;
          locationTimezone.textContent = data.timezone;
