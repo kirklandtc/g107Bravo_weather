@@ -13,12 +13,14 @@ window.addEventListener('load', ()=> {
 
   if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
-        lat = position.coods.latitude;
+        lat = position.coords.latitude;
         long = position.coords.longitude;
 
 
          const proxy ='https://cors-anywhere.herokuapp.com/';
-         const api = `${proxy}https://api.darksky.net/forecast/c9c4d3149a53a2d22839cf23c9022d7e/${lat},${long}`;
+         const api = `${proxy}https://api.darksky.net/forecast/f617d7102d6fcef56be732aa0e4edc2f/${lat},${long}`;
+
+
 
        fetch(api)
        .then(response => {
@@ -52,7 +54,7 @@ window.addEventListener('load', ()=> {
 
 
    function setIcons(icon, iconID) {
-     const skycons = new Skycons({ color: "white" });
+     const skycons = new skycons({ color: "white" });
      const currentIcon = icon.replace(/-/g, "_").toUpperCase();
      skycons.play();
      return skycons.set(iconID, Skycons[currentIcon]);
