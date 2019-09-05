@@ -1,6 +1,8 @@
 // console.log("Wake Up!")
 // alert("Hello!!")
-window.addEventListener('load', ()=> {
+// window.addEventListener('load', ()=> {
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('something');
   let lat;
   let long;
   let temperatureDescription = document.querySelector('.temperature-description');
@@ -20,7 +22,7 @@ window.addEventListener('load', ()=> {
          const proxy ="https://cors-anywhere.herokuapp.com/";
          const api = `${proxy}https://api.darksky.net/forecast/f617d7102d6fcef56be732aa0e4edc2f/${lat};${long}`;
 
-
+         console.log(api);
 
        fetch(api)
        .then(response => {
