@@ -1,7 +1,7 @@
 // console.log("Wake Up!")
 // alert("Hello!!")
-// window.addEventListener('load', ()=> {
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', ()=> {
+// document.addEventListener('DOMContentLoaded', () => {
   console.log('something');
   let lat;
   let long;
@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
         long = position.coords.longitude;
 
 
-         const proxy ="https://cors-anywhere.herokuapp.com/";
-         const api = `${proxy}https://api.darksky.net/forecast/f617d7102d6fcef56be732aa0e4edc2f/${lat};${long}`;
+         // const proxy ="https://cors-anywhere.herokuapp.com/";
+         const api = `${proxy}https://api.darksky.net/forecast/f617d7102d6fcef56be732aa0e4edc2f/${lat},${long}`;
 
          console.log(api);
 
