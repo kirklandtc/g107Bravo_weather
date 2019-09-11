@@ -10,8 +10,8 @@
 
   let temperatureDegree = document.querySelector(".temperature-degree");
   let locationTimezone = document.querySelector(".location-timezone");
-  let temperatureSection = document.querySelector(".temperature-section");
-  const temperatureSpan = document.querySelector(".temperature-section span");
+  let temperatureSection = document.querySelector(".temperature");
+  const temperatureSpan = document.querySelector(".temperature span");
 
   if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
