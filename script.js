@@ -32,7 +32,7 @@
 
          console.log(data);
 
-         const { temperature, summary } = data.currently;
+         const { temperature, summary, icon } = data.currently;
 //Set DOM elements from the api
 
          temperatureDegree.textContent = temperature;
